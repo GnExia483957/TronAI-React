@@ -1,0 +1,19 @@
+header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

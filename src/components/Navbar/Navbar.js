@@ -5,10 +5,11 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <header>
-            <h1>TronAI</h1>
+            <h1><Link to="/">Home</Link></h1>
             <nav>
-                <Link to="/">Home</Link>
+                <Link to="/News">News</Link>
                 <Link to="/AI">AI</Link>
+                <Link to="/Agent">Agent</Link>
             </nav>
         </header>
     );

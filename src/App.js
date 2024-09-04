@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './Pages/Home';
 import AI from './Pages/AI';
+import Agent from './Pages/Agent';
+import News from './Pages/News';
+
 
 const App = () => {
     return (
@@ -11,7 +14,9 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<AI />} />
+                <Route path="/AI" element={<AI />} />
+                <Route path="/Agent" element={<Agent />} />
+                <Route path="/News" element={<News />} />
             </Routes>
         </Router>
     );
