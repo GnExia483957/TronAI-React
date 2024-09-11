@@ -1,15 +1,14 @@
 
 #Top-title{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     color: white;
-    align-items: center;
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-right: 270px;
   }
   
   .box-container {
@@ -56,10 +55,11 @@
   .news-container {
     min-height: 40px;
     max-height: 15%;
-    min-width: 450px;
+    max-width: 400px;
+    min-width: 400px;
     border-radius: 1rem;
     background-color: #1A1A1A;
-    padding: 10px 30px 20px 30px;
+    padding: 0px 30px 20px 30px;
     margin: 0 0 10px 0;
     font-family: 'Google Sans', sans-serif;
   }
