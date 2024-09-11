@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../styles/Agent.css';
+import '../components/Agent/Chatbot.css';
 
 const ThinkingAnimation = () => {
     return (
