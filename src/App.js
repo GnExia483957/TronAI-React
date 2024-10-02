@@ -5,8 +5,8 @@ import Home from './Pages/Home';
 import AI from './Pages/AI';
 import News from './components/News/News';
 import Search from './components/Search/Search';
-import Agent from './Pages/Agent';
-import Test from './Pages/Test';
+// import Agent from './Pages/Agent';
+// import Test from './Pages/Test';
 
 
 const App = () => {
