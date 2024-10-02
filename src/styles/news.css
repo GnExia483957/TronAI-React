@@ -105,7 +105,7 @@
     font-family: 'Roboto', sans-serif;
   }
   
-  .see-more button {
+  button {
     background-color: #FF0000;
     border: none;
     border-radius: 20px;
@@ -113,5 +113,4 @@
     cursor: pointer;
     font-size: 13px;
     padding: 5px 20px;
-    margin-bottom: 4.2em;
   }
