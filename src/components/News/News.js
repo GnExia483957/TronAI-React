@@ -9,34 +9,41 @@ const News = () => {
   
     // Format the current date
     const formatCurrentDate = () => {
-      const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(currentDate);
-      const dayNumber = currentDate.getDate();
-      let daySuffix;
-  
-      switch (dayNumber) {
-        case 1:
-        case 21:
-        case 31:
-          daySuffix = 'st';
-          break;
-        case 2:
-        case 22:
-          daySuffix = 'nd';
-          break;
-        case 3:
-        case 23:
-          daySuffix = 'rd';
-          break;
-        default:
-          daySuffix = 'th';
-          break;
-      }
-  
-      const formattedDay = `${dayNumber}${daySuffix}`;
-      const year = currentDate.getFullYear();
-  
-      return `${monthName} ${formattedDay} ${year}`;
-    };
+        const currentDate = new Date(); // Ensure you have a current date object
+        const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(currentDate);
+        const dayNumber = currentDate.getDate();
+        let daySuffix;
+      
+        switch (dayNumber) {
+          case 1:
+          case 21:
+          case 31:
+            daySuffix = 'st';
+            break;
+          case 2:
+          case 22:
+            daySuffix = 'nd';
+            break;
+          case 3:
+          case 23:
+            daySuffix = 'rd';
+            break;
+          default:
+            daySuffix = 'th';
+            break;
+        }
+      
+        const formattedDay = `${dayNumber}${daySuffix}`;
+        const year = currentDate.getFullYear();
+      
+        return (
+            <>
+              {monthName} {formattedDay}
+              <br />
+              {year}
+            </>
+          );        
+      };
   
     // Load news function
     const loadNews = () => {

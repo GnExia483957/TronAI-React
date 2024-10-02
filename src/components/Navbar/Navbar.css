@@ -8,7 +8,11 @@ a {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
     margin-top: 10px;
+    align-items: center;
 }
 
 nav a {
@@ -19,6 +23,5 @@ nav a {
 
 nav .logo #nav-title #title {
     color: white;
-    font-family: 'Roboto', sans-serif;
-    
-  }
+    font-family: 'Roboto', sans-serif;   
+}
