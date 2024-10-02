@@ -35,7 +35,7 @@ const News = () => {
       const formattedDay = `${dayNumber}${daySuffix}`;
       const year = currentDate.getFullYear();
   
-      return `${monthName} ${formattedDay}, ${year}`;
+      return `${monthName} ${formattedDay} ${year}`;
     };
   
     // Load news function

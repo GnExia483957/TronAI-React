@@ -1,9 +1,14 @@
 import React from 'react';
+import News from '../components/News/News';
+import Search from '../components/Search/Search';
+
+
 
 const Home = () => {
     return (
-        <div className="home">
-            <p>Welcome to the Home Page!</p>
+        <div>
+            <News />
+            <Search />
         </div>
     );
 };

@@ -16,3 +16,9 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
 }
+
+nav .logo #nav-title #title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+  }
