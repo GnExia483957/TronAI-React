@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <header>
-            <h1><Link to="/">Tron.AI</Link></h1>
+            <div id="logo"><Link to="/">Tron.AI</Link></div>
             <nav>
                 <Link to="/">News</Link>
                 {/* <Link to="/AI">AI</Link> */}

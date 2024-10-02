@@ -3,6 +3,12 @@ header {
     color: white;
 }
 
+#logo{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -19,9 +25,10 @@ nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    text-shadow: 3px 3px black;
 }
 
 nav .logo #nav-title #title {
     color: white;
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;
 }

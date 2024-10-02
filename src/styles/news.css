@@ -8,7 +8,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-right: 270px;
   }
   
   .box-container {
@@ -16,6 +15,7 @@
     justify-content: center;
     text-align: center; /* Center the text */
     padding-bottom: 10px;
+    padding-right: 16rem;
   }
   
   .rounded-box {
