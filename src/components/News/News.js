@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback} from 'react';
 import '../../styles/news.css';
-import data from "../../assets/JSON/data.json";
 
 const News = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
