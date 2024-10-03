@@ -89,14 +89,9 @@
     color: white;
   }
   
-  .see-more {
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-  }
-  
   button {
     background-color: #FF0000;
+    font-family: 'Roboto', sans-serif;
     border: none;
     border-radius: 20px;
     color: white;

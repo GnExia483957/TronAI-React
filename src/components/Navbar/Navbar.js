@@ -9,8 +9,8 @@ const Navbar = () => {
             <nav>
                 <Link to="/">News</Link>
                 <Link to="/AI">AI</Link>
-                {/* <Link to="/Agent">Agent</Link>
-                <Link to="/Test">Test</Link> */}
+                <Link to="/Agent">Agent</Link>
+                {/* <Link to="/Test">Test</Link> */}
 
             </nav>
         </header>

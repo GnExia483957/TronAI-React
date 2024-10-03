@@ -75,7 +75,7 @@ const AI = () => {
 
     const typeWord = () => {
       if (index < words.length) {
-        setOutput((prev) => prev + (prev ? ' ' : '') + words[index]); // Add a space before the word if output is not empty
+        setOutput((prev) => prev + (prev ? ' ' : '') + words[index]);
         index++;
         setTimeout(typeWord, interval);
       }
