@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
+
+body{
+    overflow-y: visible;
+}
+
+.AI-outer-container{
+    max-width:700px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.AI-Container {
+    border-radius: 15px 15px 0px 0px;
+    padding: 2rem 2rem 0 2rem;
+    background: #d1deff;
+    color: #202125;
+    min-height:10vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ai-text {
+    padding: 15px 15px 15px 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result-container{
+    background-color: white;
+}
+
+#reference-header {
+    background: white;
+    padding-top: 20px;
+    padding-left: 2em;
+    color: black;
+    min-height: 15vh;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+.AI-Search-Results {
+    padding: 10px 20px 10px 60px;
+    color: black;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#results-link {
+    font-size: 1rem;
+    color: gray;
+    overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
+    word-wrap: break-word;     /* Older property for breaking long words */
+    overflow: hidden;          /* Hides any overflow content */
+    width: 100%;               /* Ensures the box takes the full width of its container */
+    box-sizing: border-box;    /* Includes padding and border in the element's total width and height */
+}
+
+#results-header {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: black;
+}
+
+#results-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #7f7f7f;
+}
+
+@media (max-width: 767px) {
+    .AI-Container {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    #ai-text {
+        font-size: 1em;
+    }
+
+    #reference-header{
+        padding: 20px;
+    }
+
+
+    .AI-Search-Results {
+        padding: 20px 15px 0px 30px;
+        font-size: 1.1rem;
+    }
+
+    #results-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .AI-Container {
+        padding: 1rem;
+    }
+
+    #ai-text {
+        font-size: 1rem;
+    }
+
+    .AI-Search-Results {
+        padding: 20px 10px 0px 30px;
+        font-size: 1rem;
+    }
+
+    #results-header {
+        font-size: 18px;
+    }
+}

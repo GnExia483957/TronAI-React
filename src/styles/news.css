@@ -15,7 +15,7 @@
     justify-content: center;
     text-align: center; /* Center the text */
     padding-bottom: 10px;
-    padding-right: 16rem;
+    padding-right: 20rem;
   }
   
   .rounded-box {
@@ -45,8 +45,8 @@
   .news-container {
     min-height: 40px;
     max-height: 15%;
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 500px;
+    min-width: 500px;
     border-radius: 1rem;
     background-color: #1A1A1A;
     padding: 0px 30px 20px 30px;

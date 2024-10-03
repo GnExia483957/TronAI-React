@@ -8,7 +8,7 @@ const Navbar = () => {
             <div id="logo"><Link to="/">Tron.AI</Link></div>
             <nav>
                 <Link to="/">News</Link>
-                {/* <Link to="/AI">AI</Link> */}
+                <Link to="/AI">AI</Link>
                 {/* <Link to="/Agent">Agent</Link>
                 <Link to="/Test">Test</Link> */}
 

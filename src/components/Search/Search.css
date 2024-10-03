@@ -5,6 +5,8 @@
     padding: 3px;
     margin-top: 5px;
     margin-bottom: 10px;
+    max-width: 500px;
+    align-items: center;
   }
   
   .search-title {
