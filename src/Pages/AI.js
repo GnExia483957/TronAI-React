@@ -148,7 +148,9 @@ const AI = () => {
           <div id="ai-text">{output}</div>
         </div>
         <div className="result-container">
+        <div id="reference-header">Reference Documentation</div>
           {results.map((result, index) => (
+            
             <div key={index} className="AI-Search-Results">
               <a id="search-link" href={result.link} target="_blank" rel="noopener noreferrer">
                 <div id="results-link">{result.link}</div>
