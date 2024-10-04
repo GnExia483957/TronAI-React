@@ -39,7 +39,7 @@ nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    text-shadow: 5px 5px black;
+    text-shadow: 5px 5px 5px black;
     font-family: 'Google Sans', sans-serif; /* Update to Google Sans */
 }
 
