@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/animation-styles.css';
-
 import '../styles/AI-styles.css';
 
 const AI = () => {
