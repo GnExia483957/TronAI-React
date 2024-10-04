@@ -151,7 +151,7 @@ const Agent = () => {
                     type="text"
                     id="userInput"
                     value={userInput}
-                    placeholder="Type your message..."
+                    placeholder="Currently Only Supoprt Developers"
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
                     disabled={isSending}
