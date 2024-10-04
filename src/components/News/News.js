@@ -2,7 +2,6 @@ import React, { useEffect, useState} from 'react';
 import '../../styles/news.css';
 
 const News = () => {
-    const [currentDate] = useState(new Date());
     const [news, setNews] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0); // Start with 0 to show the first 3 items
     const itemsPerPage = 3;
