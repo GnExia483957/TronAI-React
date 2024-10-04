@@ -8,3 +8,8 @@ body {
 #spacing {
     margin-bottom: 15px;
 }
+
+.outer-search-container{
+    display: flex;
+    justify-content: center;
+}

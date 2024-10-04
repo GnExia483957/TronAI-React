@@ -10,7 +10,9 @@ const Home = () => {
             <div id="spacing">
                 <News />
             </div>
+            <div className="outer-search-container">
             <Search />
+            </div>
         </div>
     );
 };
