@@ -5,7 +5,7 @@
     color: white;
     margin: 0;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -29,7 +29,7 @@
     color: #ffffff;
     font-weight: bold;
     border: 1px solid #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
   }
   
   
@@ -91,7 +91,7 @@
   
   button {
     background-color: #FF0000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     border: none;
     border-radius: 20px;
     color: white;

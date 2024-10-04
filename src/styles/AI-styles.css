@@ -24,14 +24,14 @@ body{
     background: #d1deff;
     color: #202125;
     min-height:10vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
 }
 
 #ai-text {
     padding: 15px 15px 15px 30px;
     font-size: 1rem;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
 }
 
 .result-container{
@@ -43,7 +43,7 @@ body{
     padding-top: 20px;
     padding-left: 2em;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     margin-bottom: 15px;
 }
 
@@ -51,7 +51,7 @@ body{
     padding: 10px 20px 10px 60px;
     color: black;
     line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Google Sans', sans-serif;
 }
 
 a {
