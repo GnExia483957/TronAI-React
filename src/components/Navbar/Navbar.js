@@ -7,11 +7,10 @@ import logoImage from '../../assets/images/Tron-Icon.png'; // Adjust the import 
 const Navbar = () => {
     return (
         <header>
+
             <div id="logo">
                 <img id="logo-image" src={logoImage} alt="logo" />
-                <a id="nav-title" href="index.html">
-                    <div id="title">TRON.AI</div>
-                </a>
+                <Link to="/"><div id="title">TRON.AI</div></Link>                   
             </div>
 
             <nav>
