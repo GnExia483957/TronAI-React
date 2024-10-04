@@ -4,3 +4,7 @@ body {
     width: auto;
     margin: 0;
 }
+
+#spacing {
+    margin-bottom: 15px;
+}

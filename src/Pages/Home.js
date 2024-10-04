@@ -7,7 +7,9 @@ import Search from '../components/Search/Search';
 const Home = () => {
     return (
         <div>
-            <News />
+            <div id="spacing">
+                <News />
+            </div>
             <Search />
         </div>
     );

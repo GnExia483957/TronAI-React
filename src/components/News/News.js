@@ -109,9 +109,11 @@ const News = () => {
             <p>No news available.</p>
           )}
           {currentIndex + itemsPerPage < news.length && (
-            <button id="seeMoreBtn" onClick={handleSeeMore}>
-              See More
-            </button>
+            <div id="spacing">
+              <button id="seeMoreBtn" onClick={handleSeeMore}>
+                See More
+              </button>
+            </div>
           )}
         </div>
       </div>

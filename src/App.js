@@ -7,10 +7,11 @@ import Agent from './Pages/Agent';
 // import Test from './Pages/Test';
 
 
+
 const App = () => {
     return (
         <Router>
-            <div className="body"></div>
+            {/* <div className="body"></div> */}
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
