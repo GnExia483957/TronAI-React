@@ -1,17 +1,20 @@
 /* Modal.css */
 
-  .app {
+  .chatModal {
     margin-top: 50px;
   }
   
+  .modal-content {
+    width: 100%;
+  }
+
   .modal {
     position: fixed;
     top: 10em;
-    right: -100%; /* Start off-screen */
-    width: 500px;
+    right: -200%; /* Start off-screen */
+    width: 600px;
     height: 100%;
-    color: white;
-    transition: right 0.3s ease;
+    transition: right 0.8s ease;
     z-index: 1000;
   }
   
@@ -20,6 +23,7 @@
   }
     
   .close {
+    color: white;
     cursor: pointer;
     float: right;
     font-size: 24px;

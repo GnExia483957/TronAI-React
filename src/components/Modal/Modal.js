@@ -20,7 +20,7 @@ const ChatModal = () => {
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className="app">
+    <div className="chatModal">
       <button onClick={openModal}>Open Modal</button>
       <Modal isOpen={isOpen} onClose={closeModal} />
     </div>

@@ -34,9 +34,6 @@ const Navbar = () => {
                   <Modal isOpen={isOpen} onClose={closeModal} />
             </nav>
 
-
-
-
     );
 };
 
