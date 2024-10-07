@@ -69,14 +69,14 @@ const AI = () => {
 
   const typeText = (text) => {
     const words = text.split(' ');
-    console.log(words);
-    let index = 0;
+    let index = -1;
     const interval = 50; // Adjust the typing speed (in milliseconds)
 
     const typeWord = () => {
-      if (index < words.length) {
+      if (index < words.length-1) {
         setOutput((prev) => prev + (prev ? ' ' : '') + words[index]);
         index++;
+        console.log(index);
         setTimeout(typeWord, interval);
       }
     };
