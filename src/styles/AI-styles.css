@@ -16,6 +16,8 @@ body{
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .AI-Container {
@@ -40,7 +42,7 @@ body{
 
 #reference-header {
     background: white;
-    padding-top: 20px;
+    padding-top: 2em;
     padding-left: 2em;
     color: black;
     font-family: 'Google Sans', sans-serif;
