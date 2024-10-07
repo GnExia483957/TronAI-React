@@ -3,14 +3,14 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
-    padding-right: 20rem;
+    padding-right: 20.5rem;
   }
   
   .rounded-box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 130px;
+    width: 125px;
     height: 50px;
     background: linear-gradient(to bottom, #a70000 50%, #610000 50%);
     border-radius: 10px;
@@ -21,8 +21,8 @@
   }
   
   .month-year{
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   #news {
