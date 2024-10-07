@@ -109,6 +109,9 @@
             border: 1px solid #f1f3f4;
             border-radius: 25px;
             padding-right: 50px;
+        }
+
+        #userInput{
             color: black;
         }
 
