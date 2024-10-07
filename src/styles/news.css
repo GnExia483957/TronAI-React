@@ -52,6 +52,7 @@
   }
   
   .headline {
+    padding-top: 5px;
     padding-left: 15px;
     font-weight: 900;
     font-size: 0.8rem;
@@ -63,6 +64,7 @@
     padding-left: 15px;
     color: #aeaeae;
     font-size: 0.9rem;
+    line-height: 1.3;
   }
   
   #news-link a {
@@ -88,5 +90,6 @@
     cursor: pointer;
     font-size: 13px;
     padding: 5px 20px;
+    
   }
 
