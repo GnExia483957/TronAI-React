@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import './Modal.css'; // Import CSS for styling
+import Agent from '../Agent/Chatbot'
 
 const Modal = ({ isOpen, onClose }) => {
   return (
     <div className={`modal ${isOpen ? 'open' : ''}`}>
       <div className="modal-content">
         <span className="close" onClick={onClose}>&times;</span>
-        <h2>Modal Title</h2>
-        <p>This is a sliding modal example.</p>
+        <Agent/>
       </div>
     </div>
   );
 };
 
-const chatModal = () => {
+const ChatModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -27,4 +27,4 @@ const chatModal = () => {
   );
 };
 
-export default chatModal;
+export default ChatModal;

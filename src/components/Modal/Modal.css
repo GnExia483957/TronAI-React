@@ -1,7 +1,6 @@
 /* Modal.css */
 
-.app {
-    text-align: center;
+  .app {
     margin-top: 50px;
   }
   
@@ -9,9 +8,8 @@
     position: fixed;
     top: 0;
     right: -100%; /* Start off-screen */
-    width: 300px;
+    width: 500px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
     color: white;
     transition: right 0.3s ease;
     z-index: 1000;
@@ -20,11 +18,7 @@
   .modal.open {
     right: 0; /* Slide in */
   }
-  
-  .modal-content {
-    padding: 20px;
-  }
-  
+    
   .close {
     cursor: pointer;
     float: right;

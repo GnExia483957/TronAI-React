@@ -9,7 +9,7 @@ const Navbar = () => {
                 <Link to="/">News</Link>
                 <Link to="/AI">AI</Link>
                 <Link to="/Agent"><img id="agent-image" src={agentImage} alt="logo" /></Link>
-                {/* <Link to="/Test">Test</Link> */}
+                <Link to="/Test">Test</Link>
             </nav>
     );
 };
