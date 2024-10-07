@@ -3,7 +3,7 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
-    padding-right: 17rem;
+    padding-right: 20rem;
   }
   
   .rounded-box {
@@ -41,7 +41,7 @@
     min-width: 450px;
     border-radius: 1rem;
     background-color: #1A1A1A;
-    padding: 0px 30px 20px 30px;
+    padding: 10px 30px 20px 30px;
     margin: 0 0 10px 0;
     font-family: 'Google Sans', sans-serif;
   }
@@ -69,7 +69,6 @@
   
   #news-link a {
     color: #aeaeae;
-    padding-left: 15px;
     text-decoration: none;
   }
   

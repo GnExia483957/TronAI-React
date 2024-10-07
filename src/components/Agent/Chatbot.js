@@ -128,8 +128,6 @@ const Chatbot = () => {
 
     return (
         <div className="chatbot-container">
-            <button className="close-button" id="closeModal" onClick={handleClose}>X</button>
-
             <div className="chat-container" ref={chatContainerRef} id="chatContainer">
                 {messages.map((msg, index) => (
                     <div key={index} className={`message ${msg.sender}`}>

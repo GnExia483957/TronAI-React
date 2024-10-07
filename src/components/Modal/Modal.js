@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Modal.css'; // Import CSS for styling
+import './Modal.css';
 import Agent from '../Agent/Chatbot'
 
 const Modal = ({ isOpen, onClose }) => {
