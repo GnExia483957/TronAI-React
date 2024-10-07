@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/animation-styles.css';
 import '../styles/AI-styles.css';
+import LoadingAnimation from '../components/LoadingAnimation/LoadingAnimation';
 
 const AI = () => {
   const [inputValue, setInputValue] = useState('');
@@ -80,7 +80,6 @@ const AI = () => {
         setTimeout(typeWord, interval);
       }
     };
-
     typeWord();
   };
 
@@ -134,12 +133,7 @@ const AI = () => {
       </div>
 
       {loading && (
-        <div className="outer-loading-container">
-          <div className="loading-container">
-            <div className="loading-text">Answer is Generating...</div>
-            <div className="loading-box"></div>
-          </div>
-        </div>
+        <LoadingAnimation/>
       )}
 
       <div className="output">

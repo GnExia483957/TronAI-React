@@ -1,11 +1,13 @@
 import React from 'react';
-import ChatModal from '../components/Modal/Modal';
+import LoadingAnimation from '../components/LoadingAnimation/LoadingAnimation'
 
 
 const Test = () => {
 
   return (
-      <ChatModal />
+    <div>
+      <LoadingAnimation/>
+    </div>
   );
 };
 
