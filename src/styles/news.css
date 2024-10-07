@@ -52,7 +52,6 @@
   }
   
   .headline {
-    padding-top: 5px;
     padding-left: 15px;
     font-weight: 900;
     font-size: 0.8rem;
@@ -60,7 +59,6 @@
   }
   
   .news {
-    padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
     color: #aeaeae;
@@ -90,6 +88,5 @@
     cursor: pointer;
     font-size: 13px;
     padding: 5px 20px;
-    
   }
 
