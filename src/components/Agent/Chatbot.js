@@ -122,9 +122,9 @@ const Chatbot = () => {
         }
     };
 
-    const handleClose = () => {
-        // Logic to handle closing the chat (e.g., hiding the component)
-    };
+    // const handleClose = () => {
+    //     // Logic to handle closing the chat (e.g., hiding the component)
+    // };
 
     return (
         <div className="chatbot-container">
