@@ -9,22 +9,22 @@
   }
   
   .search-title {
-    color: white;  /* Title color */
+    color: white;
     margin-bottom: 5px;
-    margin-left: 5px;  /* Space between title and search container */
+    margin-left: 5px;
   }
   
   .inner-search {
     background-color: #0F0F0F;
     border-radius: 2rem;
-    border: 2px solid #FF0000;  /* Added red border */
+    border: 2px solid #FF0000;
     display: flex;
     align-items: center;
     padding: 5px;
   }
   
   .icon-container {
-    margin-left: 10px; /* Space between icon and input */
+    margin-left: 10px;
   }
   
   .inner-search input {
@@ -34,7 +34,7 @@
     font-size: 0.9rem;
     background-color: #0F0F0F;
     border-radius: 15px;
-    padding-left: 25px; /* Space for the icon */
+    padding-left: 25px;
     font-weight: 600;
   
   }

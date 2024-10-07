@@ -1,7 +1,7 @@
   .box-container {
     display: flex;
     justify-content: center;
-    text-align: center; /* Center the text */
+    text-align: center;
     padding-bottom: 10px;
     padding-right: 22rem;
   }

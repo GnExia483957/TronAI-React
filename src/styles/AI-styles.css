@@ -61,11 +61,11 @@ a {
 #results-link {
     font-size: 1rem;
     color: gray;
-    overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
-    word-wrap: break-word;     /* Older property for breaking long words */
-    overflow: hidden;          /* Hides any overflow content */
-    width: 100%;               /* Ensures the box takes the full width of its container */
-    box-sizing: border-box;    /* Includes padding and border in the element's total width and height */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #results-header {
