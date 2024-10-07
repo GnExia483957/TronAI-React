@@ -1,0 +1,26 @@
+/* Modal.css */
+
+  .app {
+    margin-top: 50px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 10em;
+    right: -100%; /* Start off-screen */
+    width: 500px;
+    height: 100%;
+    color: white;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .modal.open {
+    right: 0;
+  }
+    
+  .close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+  }

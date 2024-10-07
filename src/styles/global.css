@@ -1,0 +1,15 @@
+body {
+    background-image: linear-gradient(rgb(142, 0, 0), black 30%);
+    min-height: 100vh;
+    width: auto;
+    margin: 0;
+}
+
+#spacing {
+    margin-bottom: 15px;
+}
+
+.outer-search-container{
+    display: flex;
+    justify-content: center;
+}
