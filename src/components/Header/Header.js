@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logoImage from '../../assets/images/Tron-Icon.png'; // Adjust the import path as necessary
+import logoImage from '../../assets/images/Tron-Icon.png';
 
 
 const Header = () => {
