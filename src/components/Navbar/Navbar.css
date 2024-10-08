@@ -5,7 +5,7 @@ nav {
     margin-top: 10px;
     align-items: center;
     padding-bottom: 30px;
-    padding-left: 25em;
+    padding-left: 28em;
 }
 
 nav a {
@@ -20,5 +20,5 @@ nav a {
 #agent-image{
     display: flex;
     width: 50px;
-    margin-left: 20em;
+    margin-left: 25em;
 }
