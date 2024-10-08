@@ -76,7 +76,6 @@ const AI = () => {
       if (index < words.length-1) {
         setOutput((prev) => prev + (prev ? ' ' : '') + words[index]);
         index++;
-        console.log(index);
         setTimeout(typeWord, interval);
       }
     };
