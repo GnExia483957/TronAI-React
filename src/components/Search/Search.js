@@ -10,6 +10,15 @@ const Search = () => {
     console.log(inputValue); // You can replace this with your desired functionality
   };
 
+
+const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    console.log(inputValue); // You can replace this with your desired functionality
+
+  }
+};
+
+
   return (
     <div className="search-container">
       <div className="inner-search">
@@ -32,6 +41,7 @@ const Search = () => {
           placeholder="Ask TronAI"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={handleKeyDown}
           />
         <Link to="/AI">
           <button id="toggleBtn" onClick={saveInput}>
