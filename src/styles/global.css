@@ -10,7 +10,7 @@ body {
     background-image: linear-gradient(rgb(142, 0, 0), black 30%);
     min-height: 100vh;
     width: auto;
-    margin: 0;
+    margin: 0 auto;
 }
 
 #spacing {
