@@ -16,7 +16,7 @@ const Modal = ({ isOpen, onClose }) => {
 const ChatModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => setIsOpen(true);
+  // const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
   return (
