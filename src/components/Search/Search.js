@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Search.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
   const [inputValue, setInputValue] = useState('');
@@ -14,24 +14,23 @@ const Search = () => {
     localStorage.setItem('userInput', inputValue); // Save inputValue to localStorage
   };
 
+  const handleInput = () => {
+    if (inputValue.trim() === '') {
+      alert('Please enter something in the input field'); // Alert if input is empty
+    } else {
+      saveInput(); // Save input when Enter is pressed
+      navigate('/AI'); // Navigate to the AI page
+    }
+  }
+
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      if (inputValue.trim() === '') {
-        alert('Please enter something in the input field'); // Alert if input is empty
-      } else {
-        saveInput(); // Save input when Enter is pressed
-        navigate('/AI'); // Navigate to the AI page
-      }
+      handleInput();
     }
   };
 
   const handleButtonClick = () => {
-    if (inputValue.trim() === '') {
-      alert('Please enter something in the input field'); // Alert if input is empty
-    } else {
-      saveInput(); // Save input when button is clicked
-      navigate('/AI'); // Navigate to the AI page
-    }
+    handleInput();
   };
 
   return (
@@ -55,6 +54,7 @@ const Search = () => {
           type="text"
           placeholder="Ask TronAI"
           value={inputValue}
+          spellCheck="false"
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
         />

@@ -125,6 +125,7 @@ const AI = () => {
             type="text"
             placeholder="Ask TronAI"
             value={inputValue}
+            spellCheck="false"
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
           />
