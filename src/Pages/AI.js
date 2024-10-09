@@ -22,8 +22,8 @@ const AI = () => {
   };
 
   const clearAIDivs = () => {
-    setOutput('');
-    setResults([]);
+    setOutput('');      // Clear the output
+    setResults([]);     // Clear the results
   };
 
   const getValue = (value) => {

@@ -12,7 +12,6 @@ const Search = () => {
       return; // Exit the function if input is empty
     }
     localStorage.setItem('userInput', inputValue); // Save inputValue to localStorage
-    console.log(inputValue); // You can replace this with your desired functionality
   };
 
   const handleKeyDown = (event) => {

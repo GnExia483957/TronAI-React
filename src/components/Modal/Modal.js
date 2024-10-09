@@ -21,7 +21,6 @@ const ChatModal = () => {
 
   return (
     <div className="chatModal">
-      <button onClick={openModal}>Open Modal</button>
       <Modal isOpen={isOpen} onClose={closeModal} />
     </div>
   );
