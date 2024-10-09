@@ -7,13 +7,30 @@ const Search = () => {
   const navigate = useNavigate(); // Hook for navigation
 
   const saveInput = () => {
+    if (inputValue.trim() === '') {
+      alert('Please enter something in the input field'); // Alert if input is empty
+      return; // Exit the function if input is empty
+    }
     localStorage.setItem('userInput', inputValue); // Save inputValue to localStorage
-    // console.log(inputValue); // You can replace this with your desired functionality
+    console.log(inputValue); // You can replace this with your desired functionality
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      saveInput(); // Save input when Enter is pressed
+      if (inputValue.trim() === '') {
+        alert('Please enter something in the input field'); // Alert if input is empty
+      } else {
+        saveInput(); // Save input when Enter is pressed
+        navigate('/AI'); // Navigate to the AI page
+      }
+    }
+  };
+
+  const handleButtonClick = () => {
+    if (inputValue.trim() === '') {
+      alert('Please enter something in the input field'); // Alert if input is empty
+    } else {
+      saveInput(); // Save input when button is clicked
       navigate('/AI'); // Navigate to the AI page
     }
   };
@@ -42,11 +59,9 @@ const Search = () => {
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
         />
-        <Link to="/AI">
-          <button id="toggleBtn" onClick={saveInput}>
-            AI Analyze
-          </button>
-        </Link>
+        <button id="toggleBtn" onClick={handleButtonClick}>
+          AI Analyze
+        </button>
       </div>
     </div>
   );
