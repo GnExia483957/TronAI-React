@@ -28,8 +28,8 @@ const Navbar = () => {
     return (
       <nav>
         <Link to="/">News</Link>
-        <Link to="/AI">AI</Link>
-        <Link to="/Test">Test</Link>
+        {/* <Link to="/AI">AI</Link> */}
+        {/* <Link to="/Test">Test</Link> */}
         <div onClick={openModal}><img id="agent-image" src={agentImage} alt="logo" /></div>
         <Modal isOpen={isOpen} onClose={closeModal} />
       </nav>

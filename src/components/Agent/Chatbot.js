@@ -11,6 +11,7 @@ const ThinkingAnimation = () => {
     );
 };
 
+
 const Chatbot = () => {
     const [messages, setMessages] = useState([{ sender: 'bot', text: 'Dear Tron user, how can I help?' }]);
     const [userInput, setUserInput] = useState('');
@@ -128,6 +129,7 @@ const Chatbot = () => {
 
     return (
         <div className="chatbot-container">
+            <button class="close-button" id="closeModal">X</button>
             <div className="chat-container" ref={chatContainerRef} id="chatContainer">
                 {messages.map((msg, index) => (
                     <div key={index} className={`message ${msg.sender}`}>

@@ -13,8 +13,7 @@ const Search = () => {
 
 const handleKeyDown = (event) => {
   if (event.key === 'Enter') {
-    console.log(inputValue); // You can replace this with your desired functionality
-
+    console.log("help");
   }
 };
 

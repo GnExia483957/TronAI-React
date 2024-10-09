@@ -3,10 +3,6 @@
   .chatModal {
     margin-top: 50px;
   }
-  
-  .modal-content {
-    width: 100%;
-  }
 
   .modal {
     position: fixed;

@@ -21,4 +21,5 @@ nav a {
     display: flex;
     width: 50px;
     margin-left: 25em;
+    cursor: pointer;
 }
