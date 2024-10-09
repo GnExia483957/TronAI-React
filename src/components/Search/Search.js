@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import './Search.css';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Search = () => {
   const [inputValue, setInputValue] = useState('');
+  const navigate = useNavigate(); // Hook for navigation
 
   const saveInput = () => {
-    console.log(inputValue); // You can replace this with your desired functionality
+    localStorage.setItem('userInput', inputValue); // Save inputValue to localStorage
+    // console.log(inputValue); // You can replace this with your desired functionality
   };
 
-
-const handleKeyDown = (event) => {
-  if (event.key === 'Enter') {
-    console.log("help");
-  }
-};
-
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      saveInput(); // Save input when Enter is pressed
+      navigate('/AI'); // Navigate to the AI page
+    }
+  };
 
   return (
     <div className="search-container">
@@ -29,7 +29,7 @@ const handleKeyDown = (event) => {
             fill="#FF0000"
             className="bi bi-search"
             viewBox="0 0 16 16"
-            >
+          >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.394 1.394l3.75 3.75a1 1 0 0 0 1.415-1.415l-3.75-3.75zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </div>
@@ -41,7 +41,7 @@ const handleKeyDown = (event) => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
-          />
+        />
         <Link to="/AI">
           <button id="toggleBtn" onClick={saveInput}>
             AI Analyze

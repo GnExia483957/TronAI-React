@@ -10,7 +10,7 @@ const AI = () => {
 
   useEffect(() => {
     // Load input value from localStorage on component mount
-    const savedInputValue = localStorage.getItem('inputValue');
+    const savedInputValue = localStorage.getItem('userInput');
     if (savedInputValue && savedInputValue.trim() !== '') {
       setInputValue(savedInputValue);
       getValue(savedInputValue);
