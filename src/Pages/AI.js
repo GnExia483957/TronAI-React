@@ -119,7 +119,7 @@ const AI = () => {
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.394 1.394l3.75 3.75a1 1 0 0 0 1.415-1.415l-3.75-3.75zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
           </div>
-
+  
           <input
             id="myInput"
             type="text"
@@ -131,30 +131,31 @@ const AI = () => {
           <button onClick={handleButtonClick} id="toggleBtn">AI Analyze</button>
         </div>
       </div>
-
+  
       {loading && (
-        <LoadingAnimation/>
+        <LoadingAnimation />
       )}
-
-      <div className="output">
-        <div className="AI-Container">
-          <div id="ai-header">Generated Answer</div>
-          <div id="ai-text">{output}</div>
+  
+      {!loading && ( // Only render these divs when not loading
+        <div className="output">
+          <div className="AI-Container">
+            <div id="ai-header">Generated Answer</div>
+            <div id="ai-text">{output}</div>
+          </div>
+          <div className="result-container">
+            <div id="reference-header">Reference Documentation</div>
+            {results.map((result, index) => (
+              <div key={index} className="AI-Search-Results">
+                <a id="search-link" href={result.link} target="_blank" rel="noopener noreferrer">
+                  <div id="results-link">{result.link}</div>
+                  <div id="results-header">{result.title}</div>
+                  <div id="results-description">{result.snippet}</div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="result-container">
-        <div id="reference-header">Reference Documentation</div>
-          {results.map((result, index) => (
-            
-            <div key={index} className="AI-Search-Results">
-              <a id="search-link" href={result.link} target="_blank" rel="noopener noreferrer">
-                <div id="results-link">{result.link}</div>
-                <div id="results-header">{result.title}</div>
-                <div id="results-description">{result.snippet}</div>
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
+      )}
     </div>
   );
 };
