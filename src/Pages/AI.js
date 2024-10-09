@@ -21,14 +21,14 @@ const AI = () => {
     setLoading((prev) => !prev);
   };
 
-  const clearAIDivs = () => {
+  const clearDivs = () => {
     setOutput('');      // Clear the output
     setResults([]);     // Clear the results
   };
 
   const getValue = (value) => {
     if (value.trim() !== "") {
-      clearAIDivs();
+      clearDivs();
       aiSearch(value);
     } else {
       errorInput();
@@ -88,6 +88,7 @@ const AI = () => {
       title: page.title,
       snippet: page.snippet
     }));
+    
     setResults(newResults);
   };
 
