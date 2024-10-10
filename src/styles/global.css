@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     width: auto;
     margin: 0 auto;
+    
 }
 
 #spacing {
@@ -21,3 +22,4 @@ body {
     display: flex;
     justify-content: center;
 }
+
