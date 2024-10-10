@@ -12,7 +12,7 @@
 
 .modal {
   position: fixed;
-  top: 150px; /* Set top margin */
+  top: 160px; /* Set top margin */
   right: -100%; /* Start off-screen */
   width: calc(100% - 0px); /* Full width, adjust if needed */
   height: calc(100% - 50px); /* Full height minus top margin */
@@ -29,9 +29,8 @@
   cursor: pointer;
   font-size: 24px;
   position: absolute; /* Position it relative to the modal-content */
-  top: 2%; /* Center vertically */
-  left: 72%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for its own size */
+  top: 1%;
+  left: 71%;
   z-index: 1001; /* Ensure it overlaps content */
 }
 
