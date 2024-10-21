@@ -104,8 +104,8 @@ button {
   
 
   .news-container {
-      max-width: 50%;
-      min-width: 50%;
+      max-width: 45%;
+      min-width: 45%;
   }
 }
 
@@ -135,9 +135,13 @@ button {
 }
 
 @media (max-width: 600px) { /* Smartphones */
+  .box-container {
+    padding-left: 2rem;
+}
+  
   .rounded-box {
-      width: 80px;
-      height: 35px;
+      width: 100px;
+      height: 40px;
   }
 
   .news-container {

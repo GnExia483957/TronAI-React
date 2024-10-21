@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
 
-body{
-    overflow-y: hidden;
-}
-
 .AI-outer-container{
     max-width:700px;
     margin: 0 auto;
