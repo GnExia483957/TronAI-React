@@ -27,3 +27,37 @@ body {
     justify-content: center;
 }
 
+#spacing {
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablets */
+    #spacing {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) { /* iPad, Galaxy Tab */
+    #spacing {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) { /* Smartphones */
+    #spacing {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 375px) { /* iPhone 13, Google Pixel */
+    #spacing {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 320px) { /* Smaller smartphones */
+    #spacing {
+        margin-bottom: 4px;
+    }
+}

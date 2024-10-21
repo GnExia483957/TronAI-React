@@ -93,16 +93,27 @@ button {
 
 /* Responsive Styles */
 @media (max-width: 1024px) { /* Tablets */
+
+  #news {
+    min-height: 400px;
+    max-height: 400px;
+    margin: 0;
+  }
+
   .box-container {
       padding-right: 20rem;
   }
+
+  .rounded-box {
+    width: 100px;
+    height: 40px;
+}
 
   .month-year {
     font-size: 0.8rem;
     line-height: 1.5;
   }
   
-
   .news-container {
       max-width: 45%;
       min-width: 45%;
@@ -149,14 +160,6 @@ button {
       max-width: 90%;
       min-width: 90%;
 
-  }
-
-  .headline {
-      font-size: 0.6rem;
-  }
-
-  .news {
-      font-size: 0.7rem;
   }
 
   button {
