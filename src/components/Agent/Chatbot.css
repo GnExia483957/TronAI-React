@@ -134,7 +134,7 @@
 
         @media (min-width: 901px) and (max-width: 1200px) {
             .chatbot-container {
-                max-width: 70%;
+                max-width: 100%;
             }
             .message-box {
                 max-width: 75%;

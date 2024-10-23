@@ -41,6 +41,15 @@
   .modal {
     top: 125px;
   }
+  
+  .modal.open {
+    right: -150px;
+  }
+
+  .close {
+    left: 96%;
+    z-index: 1001;
+  }
 
   .modal-content {
     width: 70%;
