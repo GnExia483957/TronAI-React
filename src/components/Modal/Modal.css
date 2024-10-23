@@ -86,11 +86,11 @@
 
 @media (max-width: 375px) {
   .modal-content {
-    width: 90%;
+    width: 91%;
   }
 
   .modal {
-    top: 160px;
+    top: 150px;
   }
 }
 
