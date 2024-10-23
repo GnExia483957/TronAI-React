@@ -1,39 +1,101 @@
-/* Modal.css */
-
 .chatModal {
-  margin-top: 50px; /* Keep the top margin */
+  margin-top: 50px;
 }
 
 .modal-content {
-  width: 50%; /* Make content take full width */
-  padding: 0; /* Optional: remove padding if desired */
-  position: relative; /* Position context for the close button */
+  width: 50%;
+  padding: 0;
+  position: relative;
 }
 
 .modal {
   position: fixed;
-  top: 160px; /* Set top margin */
-  right: -100%; /* Start off-screen */
-  width: calc(100% - 0px); /* Full width, adjust if needed */
-  height: calc(100% - 50px); /* Full height minus top margin */
+  top: 160px;
+  right: -100%;
+  width: calc(100% - 0px);
+  height: calc(100% - 50px);
   transition: right 0.5s ease;
   z-index: 1000;
 }
 
 .modal.open {
-  right: -850px; /* Bring modal into view */
+  right: -850px;
 }
 
 .close {
   color: gray;
   cursor: pointer;
   font-size: 24px;
-  position: absolute; /* Position it relative to the modal-content */
+  position: absolute;
   top: 1%;
   left: 71%;
-  z-index: 1001; /* Ensure it overlaps content */
+  z-index: 1001;
 }
 
 .close:hover {
   color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 160px;
+  }
+
+  .modal.open {
+    right: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 160px;
+  }
+
+  .modal.open {
+    right: 0px;
+  }
+
+  .close {
+    font-size: 18px; /* Smaller close button */
+    left: 90%; /* Adjust close button position */
+  }
+}
+
+@media (max-width: 375px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal {
+    top: 60px; /* Further adjust top position */
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 50px; /* Further adjust top position */
+  }
+
+  .close {
+    font-size: 16px; /* Smaller close button */
+  }
 }

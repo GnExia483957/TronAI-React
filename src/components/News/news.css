@@ -123,7 +123,7 @@ button {
 @media (max-width: 768px) { /* iPad, Galaxy Tab */
   .box-container {
       flex-direction: column;
-      padding-right: 0;
+      padding-left: 12rem;
   }
 
   .rounded-box {
