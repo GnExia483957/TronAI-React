@@ -18,12 +18,12 @@ const AI = () => {
   }, []);
 
   const toggleLoading = () => {
-    setLoading((prev) => !prev);
+    setLoading(( prev ) => !prev);
   };
 
   const clearDivs = () => {
-    setOutput('');      // Clear the output
-    setResults([]);     // Clear the results
+    setOutput('');
+    setResults([]);
   };
 
   const getValue = (value) => {
