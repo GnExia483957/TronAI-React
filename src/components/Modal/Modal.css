@@ -71,18 +71,17 @@
   }
 
   .close {
-    font-size: 18px; /* Smaller close button */
-    left: 90%; /* Adjust close button position */
+    left: 90%;
   }
 }
 
 @media (max-width: 375px) {
   .modal-content {
-    width: 95%;
+    width: 90%;
   }
 
   .modal {
-    top: 60px; /* Further adjust top position */
+    top: 160px;
   }
 }
 
@@ -92,10 +91,10 @@
   }
 
   .modal {
-    top: 50px; /* Further adjust top position */
+    top: 150px;
   }
 
   .close {
-    font-size: 16px; /* Smaller close button */
+    font-size: 16px;
   }
 }
