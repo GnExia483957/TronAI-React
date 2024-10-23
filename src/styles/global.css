@@ -1,15 +1,63 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0F0F0F inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+html {
+    width: auto;
+    margin: 0 auto;
+}
+
 body {
     background-image: linear-gradient(rgb(142, 0, 0), black 30%);
     min-height: 100vh;
-    width: auto;
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #spacing {
     margin-bottom: 15px;
 }
 
-.outer-search-container{
+.outer-search-container {
     display: flex;
     justify-content: center;
+}
+
+#spacing {
+    margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablets */
+    #spacing {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) { /* iPad, Galaxy Tab */
+    #spacing {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) { /* Smartphones */
+    #spacing {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 375px) { /* iPhone 13, Google Pixel */
+    #spacing {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 320px) { /* Smaller smartphones */
+    #spacing {
+        margin-bottom: 4px;
+    }
 }

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf2c5d4b.css",
+    "main.js": "/static/js/main.6e449b58.js",
+    "static/media/Tron-Icon.png": "/static/media/Tron-Icon.0291e2bbf5fabcd3bd2f.png",
+    "static/media/Agent-Icon.png": "/static/media/Agent-Icon.70e46350f9272680bee2.png",
+    "index.html": "/index.html",
+    "main.cf2c5d4b.css.map": "/static/css/main.cf2c5d4b.css.map",
+    "main.6e449b58.js.map": "/static/js/main.6e449b58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf2c5d4b.css",
+    "static/js/main.6e449b58.js"
+  ]
+}

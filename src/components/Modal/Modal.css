@@ -1,26 +1,118 @@
-/* Modal.css */
+.chatModal {
+  margin-top: 50px;
+}
 
-  .app {
-    margin-top: 50px;
-  }
-  
+.modal-content {
+  width: 50%;
+  padding: 0;
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 145px;
+  right: -100%;
+  width: calc(100% - 0px);
+  height: calc(100% - 50px);
+  transition: right 0.5s ease;
+  z-index: 1000;
+}
+
+.modal.open {
+  right: -850px;
+}
+
+.close {
+  color: gray;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 1%;
+  left: 71%;
+  z-index: 1001;
+}
+
+.close:hover {
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .modal {
-    position: fixed;
-    top: 10em;
-    right: -100%; /* Start off-screen */
-    width: 500px;
-    height: 100%;
-    color: white;
-    transition: right 0.3s ease;
-    z-index: 1000;
+    top: 125px;
   }
   
   .modal.open {
-    right: 0;
+    right: -150px;
   }
-    
+
   .close {
-    cursor: pointer;
-    float: right;
-    font-size: 24px;
+    left: 96%;
+    z-index: 1001;
   }
+
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 160px;
+  }
+
+  .modal.open {
+    right: -30px;
+  }
+
+  .close {
+    top: 1%;
+    left: 89%;  
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 150px;
+  }
+
+  .modal.open {
+    right: 0px;
+  }
+
+  .close {
+    top: 1%;
+    left: 94%;  
+  }}
+
+@media (max-width: 375px) {
+  .modal-content {
+    width: 91%;
+  }
+
+  .modal {
+    top: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    top: 150px;
+  }
+
+  .close {
+    font-size: 16px;
+  }
+}

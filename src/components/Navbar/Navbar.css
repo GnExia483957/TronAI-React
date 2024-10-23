@@ -1,11 +1,10 @@
-
 nav {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     align-items: center;
     padding-bottom: 30px;
-    padding-left: 30em;
+    padding-left: 28em;
 }
 
 nav a {
@@ -17,8 +16,46 @@ nav a {
     font-family: 'Google Sans', sans-serif;
 }
 
-#agent-image{
+#agent-image {
     display: flex;
     width: 50px;
     margin-left: 25em;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding-left: 15em;
+    }
+
+    #agent-image {
+        margin-left: 8em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding-left: 10px;
+    }
+
+    nav a {
+        margin-left: 180px;
+    }
+
+    #agent-image {
+        margin-top: 10px;
+        margin-right: 40px
+    }
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
 }

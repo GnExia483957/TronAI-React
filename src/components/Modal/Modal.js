@@ -16,12 +16,11 @@ const Modal = ({ isOpen, onClose }) => {
 const ChatModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => setIsOpen(true);
+  // const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
   return (
-    <div className="app">
-      <button onClick={openModal}>Open Modal</button>
+    <div className="chatModal">
       <Modal isOpen={isOpen} onClose={closeModal} />
     </div>
   );
