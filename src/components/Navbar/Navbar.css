@@ -39,11 +39,12 @@ nav a {
     }
 
     nav a {
-        margin-left: 10px;
+        margin-left: 180px;
     }
 
     #agent-image {
         margin-top: 10px;
+        margin-right: 40px
     }
 }
 
@@ -56,5 +57,5 @@ nav a {
 }
 
 @media (max-width: 320px) {
-    
+
 }
