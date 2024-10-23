@@ -55,6 +55,11 @@
   .modal.open {
     right: -30px;
   }
+
+  .close {
+    top: 1%;
+    left: 89%;  
+  }
 }
 
 @media (max-width: 600px) {
@@ -71,9 +76,9 @@
   }
 
   .close {
-    left: 90%;
-  }
-}
+    top: 1%;
+    left: 94%;  
+  }}
 
 @media (max-width: 375px) {
   .modal-content {
