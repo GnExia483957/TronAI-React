@@ -10,7 +10,7 @@
 
 .modal {
   position: fixed;
-  top: 135px;
+  top: 145px;
   right: -100%;
   width: calc(100% - 0px);
   height: calc(100% - 50px);
