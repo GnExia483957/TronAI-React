@@ -115,8 +115,8 @@
         @media (max-width: 600px) {
             .chatbot-container {
                 max-width: 98%;
-                max-height: 66vh;
-                min-height: 66vh;    
+                max-height: 66.5vh;
+                min-height: 66.5vh;    
             }
             .message-box {
                 max-width: 90%;

@@ -10,7 +10,7 @@
 
 .modal {
   position: fixed;
-  top: 160px;
+  top: 135px;
   right: -100%;
   width: calc(100% - 0px);
   height: calc(100% - 50px);
@@ -38,6 +38,10 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+  .modal {
+    top: 125px;
+  }
+
   .modal-content {
     width: 70%;
   }
@@ -68,7 +72,7 @@
   }
 
   .modal {
-    top: 160px;
+    top: 150px;
   }
 
   .modal.open {
