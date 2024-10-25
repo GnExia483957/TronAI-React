@@ -94,6 +94,7 @@ button {
 @media (max-width: 1024px) { /* Tablets */
 
   #news {
+    min-height: 400px;
     max-height: 400px;
     margin: 0;
   }
