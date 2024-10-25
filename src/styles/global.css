@@ -6,11 +6,6 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: white !important;
 }
 
-html {
-    width: auto;
-    margin: 0 auto;
-}
-
 body {
     background-image: linear-gradient(rgb(142, 0, 0), black 30%);
     min-height: 100vh;
