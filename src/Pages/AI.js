@@ -9,13 +9,13 @@ const AI = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    // Load input value from localStorage on component mount
     const savedInputValue = localStorage.getItem('userInput');
     if (savedInputValue && savedInputValue.trim() !== '') {
       setInputValue(savedInputValue);
       getValue(savedInputValue);
     }
-  }, []);
+  }, []); // This effect only needs to run once on mount
+  
 
   const toggleLoading = () => {
     setLoading(( prev ) => !prev);
