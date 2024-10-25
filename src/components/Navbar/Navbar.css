@@ -35,7 +35,7 @@ nav a {
 
 @media (max-width: 768px) {
     nav {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     nav a {
@@ -49,10 +49,36 @@ nav a {
 }
 
 @media (max-width: 600px) {
-    
+    nav {
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-left: 140px;
+    }
+
+    #agent-image {
+        margin-top: 10px;
+        margin-left: 70px
+    }
+
 }
 
 @media (max-width: 375px) {
+    nav {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-left: 140px;
+    }
+
+    #agent-image {
+        margin-top: 10px;
+        margin-left: 50px
+    }
 
 }
 

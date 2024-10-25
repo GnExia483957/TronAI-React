@@ -81,7 +81,7 @@
   }
 
   .modal {
-    top: 150px;
+    top: 140px;
   }
 
   .modal.open {
@@ -95,11 +95,11 @@
 
 @media (max-width: 375px) {
   .modal-content {
-    width: 91%;
+    width: 100%;
   }
 
   .modal {
-    top: 150px;
+    top: 145px;
   }
 }
 

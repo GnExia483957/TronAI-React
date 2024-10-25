@@ -27,8 +27,8 @@ const Navbar = () => {
     return (
         <nav>
             <Link to="/">News</Link>
-            <div onClick={toggleModal}>
-                <img id="agent-image" src={agentImage} alt="logo" />
+            <div >
+                <img id="agent-image" src={agentImage} alt="logo" onClick={toggleModal}/>
             </div>
             <Modal isOpen={isOpen} onClose={toggleModal} />
         </nav>
