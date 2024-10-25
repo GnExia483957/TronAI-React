@@ -168,8 +168,12 @@ button {
 
 @media (max-width: 375px) { /* iPhone 13, Google Pixel */
   .rounded-box {
-      width: 70px;
-      height: 30px;
+      width: 85px;
+      height: 40px;
+  }
+
+  .month-year{
+    font-size: 0.7rem;
   }
 
   .news-container {
@@ -177,11 +181,11 @@ button {
   }
 
   .headline {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
   }
 
   .news {
-      font-size: 0.6rem;
+      font-size: .7rem;
   }
 
   button {

@@ -48,14 +48,40 @@ nav a {
     }
 }
 
-/* @media (max-width: 600px) {
-    
+@media (max-width: 600px) {
+    nav {
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-left: 140px;
+    }
+
+    #agent-image {
+        margin-top: 10px;
+        margin-left: 70px
+    }
+
 }
 
 @media (max-width: 375px) {
+    nav {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-left: 140px;
+    }
+
+    #agent-image {
+        margin-top: 10px;
+        margin-left: 50px
+    }
 
 }
 
 @media (max-width: 320px) {
 
-} */
+}
