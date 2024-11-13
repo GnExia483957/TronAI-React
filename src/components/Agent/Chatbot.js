@@ -15,7 +15,7 @@ const ThinkingAnimation = () => {
 
 const Chatbot = () => {
 
-    const [messages, setMessages] = useState([{ sender: 'bot', text: <Markdown>***Dear Tron user, how can I help?***</Markdown> }]);
+    const [messages, setMessages] = useState([{ sender: 'bot', text: 'Dear Tron user, how can I help?' }]);
     const [userInput, setUserInput] = useState('');
     const [isSending, setIsSending] = useState(false);
     const chatContainerRef = useRef(null);
@@ -80,7 +80,7 @@ const Chatbot = () => {
     };
 
     const typeOutMessage = (text, sender) => {
-        const messageBox = { sender, text: '' }; // Initialize with empty text
+        const messageBox = { sender, text: <Markdown>{text}</Markdown> }; // Render Markdown
         setMessages(prevMessages => [...prevMessages, messageBox]);
 
         let index = 0;
@@ -88,7 +88,9 @@ const Chatbot = () => {
             if (index < text.length) {
                 setMessages(prevMessages => {
                     const updatedMessages = [...prevMessages];
-                    updatedMessages[updatedMessages.length - 1].text = text.substring(0, index + 1); // Update text progressively
+                    updatedMessages[updatedMessages.length - 1].text = (
+                        <Markdown>{text.substring(0, index + 1)}</Markdown>
+                    ); // Update text progressively
                     return updatedMessages;
                 });
                 index++;
@@ -120,10 +122,8 @@ const Chatbot = () => {
     };
 
     const handleKeyPress = (e) => {
-        console.log('Key pressed:', e.key);
         if (e.key === 'Enter' && !enterKeyDisabledRef.current) {
             e.preventDefault(); // Prevent default behavior
-            console.log('Sending message');
             handleSendMessage();
         }
     };
