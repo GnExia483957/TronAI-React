@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/AI-styles.css';
 import LoadingAnimation from '../components/LoadingAnimation/LoadingAnimation';
 
+
 const AI = () => {
   const [inputValue, setInputValue] = useState('');
   const [loading, setLoading] = useState(false);

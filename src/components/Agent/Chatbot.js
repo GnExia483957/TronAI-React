@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Chatbot.css';
-
+import Markdown from 'react-markdown'
 
 const ThinkingAnimation = () => {
     return (
@@ -14,7 +14,8 @@ const ThinkingAnimation = () => {
 
 
 const Chatbot = () => {
-    const [messages, setMessages] = useState([{ sender: 'bot', text: 'Dear Tron user, how can I help?' }]);
+
+    const [messages, setMessages] = useState([{ sender: 'bot', text: <Markdown>***Dear Tron user, how can I help?***</Markdown> }]);
     const [userInput, setUserInput] = useState('');
     const [isSending, setIsSending] = useState(false);
     const chatContainerRef = useRef(null);
@@ -31,7 +32,7 @@ const Chatbot = () => {
     const handleSendMessage = () => {
         const trimmedMessage = userInput.trim();
         if (trimmedMessage === '') {
-            appendMessage('bot', 'Please enter a message so I can properly assist you.');
+            appendMessage('bot', <Markdown># Please enter a message so I can properly assist you.</Markdown>);
             return;
         }
 
