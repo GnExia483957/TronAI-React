@@ -32,7 +32,7 @@ const Chatbot = () => {
     const handleSendMessage = () => {
         const trimmedMessage = userInput.trim();
         if (trimmedMessage === '') {
-            appendMessage('bot', <Markdown># Please enter a message so I can properly assist you.</Markdown>);
+            appendMessage('bot', 'Please enter a message so I can properly assist you.');
             return;
         }
 
@@ -154,7 +154,7 @@ const Chatbot = () => {
                     value={userInput}
                     placeholder="Currently Only Support Developers"
                     onChange={handleInputChange}
-                    onKeyPress={handleKeyPress}
+                    onKeypress={handleKeyPress}
                     disabled={isSending}
                 />
                 <button className="send-button" id="sendButton" onClick={handleSendMessage} disabled={isSending}>

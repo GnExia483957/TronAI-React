@@ -5,6 +5,7 @@
   margin-top: 5px;
   margin-bottom: 10px;
   min-width: 500px;
+  z-index: 2000;
 }
 
 .search-title {
