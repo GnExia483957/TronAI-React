@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Chatbot.css';
 
+
 const ThinkingAnimation = () => {
     return (
         <div className="loader">
@@ -150,7 +151,7 @@ const Chatbot = () => {
                     type="text"
                     id="userInput"
                     value={userInput}
-                    placeholder="Type your message..."
+                    placeholder="Currently Only Support Developers"
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
                     disabled={isSending}
