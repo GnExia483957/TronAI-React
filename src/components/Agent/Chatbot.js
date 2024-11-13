@@ -120,7 +120,10 @@ const Chatbot = () => {
     };
 
     const handleKeyPress = (e) => {
+        console.log('Key pressed:', e.key);
         if (e.key === 'Enter' && !enterKeyDisabledRef.current) {
+            e.preventDefault(); // Prevent default behavior
+            console.log('Sending message');
             handleSendMessage();
         }
     };
@@ -154,13 +157,18 @@ const Chatbot = () => {
                     value={userInput}
                     placeholder="Currently Only Support Developers"
                     onChange={handleInputChange}
-                    onKeypress={handleKeyPress}
+                    onKeyDown={handleKeyPress} // Use onKeyDown
                     disabled={isSending}
                 />
-                <button className="send-button" id="sendButton" onClick={handleSendMessage} disabled={isSending}>
+                <button
+                    className="send-button"
+                    id="sendButton"
+                    onClick={handleSendMessage}
+                    disabled={isSending}
+                >
                     Send
                 </button>
-            </div>
+            </div>       
         </div>
     );
 };
