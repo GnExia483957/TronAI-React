@@ -1,7 +1,6 @@
 nav {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     align-items: center;
     padding-bottom: 30px;
     padding-left: 28em;
@@ -43,7 +42,6 @@ nav a {
     }
 
     #agent-image {
-        margin-top: 10px;
         margin-right: 40px
     }
 }
@@ -59,7 +57,6 @@ nav a {
     }
 
     #agent-image {
-        margin-top: 10px;
         margin-left: 70px
     }
 

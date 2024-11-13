@@ -2,11 +2,21 @@ import React, { useState, useEffect } from 'react';
 import '../styles/AI-styles.css';
 import LoadingAnimation from '../components/LoadingAnimation/LoadingAnimation';
 
+
 const AI = () => {
   const [inputValue, setInputValue] = useState('');
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState('');
   const [results, setResults] = useState([]);
+
+  const getValue = (value) => {
+    if (value.trim() !== "") {
+      clearDivs();
+      aiSearch(value);
+    } else {
+      errorInput();
+    }
+  };
 
   useEffect(() => {
     const savedInputValue = localStorage.getItem('userInput');
@@ -16,7 +26,6 @@ const AI = () => {
     }
   }, []); // This effect only needs to run once on mount
   
-
   const toggleLoading = () => {
     setLoading(( prev ) => !prev);
   };
@@ -24,15 +33,6 @@ const AI = () => {
   const clearDivs = () => {
     setOutput('');
     setResults([]);
-  };
-
-  const getValue = (value) => {
-    if (value.trim() !== "") {
-      clearDivs();
-      aiSearch(value);
-    } else {
-      errorInput();
-    }
   };
 
   const errorInput = () => {
