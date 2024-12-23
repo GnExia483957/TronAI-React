@@ -15,7 +15,7 @@ const ThinkingAnimation = () => {
 
 const Chatbot = () => {
 
-    const [messages, setMessages] = useState([{ sender: 'bot', text: <Markdown>***Dear Tron user, how can I help?***</Markdown> }]);
+    const [messages, setMessages] = useState([{ sender: 'bot', text: 'Dear Tron user, how can I help?' }]);
     const [userInput, setUserInput] = useState('');
     const [isSending, setIsSending] = useState(false);
     const chatContainerRef = useRef(null);
@@ -32,7 +32,7 @@ const Chatbot = () => {
     const handleSendMessage = () => {
         const trimmedMessage = userInput.trim();
         if (trimmedMessage === '') {
-            appendMessage('bot', <Markdown># Please enter a message so I can properly assist you.</Markdown>);
+            appendMessage('bot', 'Please enter a message so I can properly assist you.');
             return;
         }
 
@@ -68,6 +68,7 @@ const Chatbot = () => {
         .then(data => {
             hideThinkingAnimation();
             typeOutMessage(data.data.answer, 'bot');
+            console.log(data);
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
@@ -80,7 +81,7 @@ const Chatbot = () => {
     };
 
     const typeOutMessage = (text, sender) => {
-        const messageBox = { sender, text: '' }; // Initialize with empty text
+        const messageBox = { sender, text: <Markdown>{text}</Markdown> }; // Render Markdown
         setMessages(prevMessages => [...prevMessages, messageBox]);
 
         let index = 0;
@@ -88,7 +89,9 @@ const Chatbot = () => {
             if (index < text.length) {
                 setMessages(prevMessages => {
                     const updatedMessages = [...prevMessages];
-                    updatedMessages[updatedMessages.length - 1].text = text.substring(0, index + 1); // Update text progressively
+                    updatedMessages[updatedMessages.length - 1].text = (
+                        <Markdown>{text.substring(0, index + 1)}</Markdown>
+                    ); // Update text progressively
                     return updatedMessages;
                 });
                 index++;
@@ -121,6 +124,7 @@ const Chatbot = () => {
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter' && !enterKeyDisabledRef.current) {
+            e.preventDefault(); // Prevent default behavior
             handleSendMessage();
         }
     };
@@ -154,13 +158,18 @@ const Chatbot = () => {
                     value={userInput}
                     placeholder="Currently Only Support Developers"
                     onChange={handleInputChange}
-                    onKeyPress={handleKeyPress}
+                    onKeyDown={handleKeyPress} // Use onKeyDown
                     disabled={isSending}
                 />
-                <button className="send-button" id="sendButton" onClick={handleSendMessage} disabled={isSending}>
+                <button
+                    className="send-button"
+                    id="sendButton"
+                    onClick={handleSendMessage}
+                    disabled={isSending}
+                >
                     Send
                 </button>
-            </div>
+            </div>       
         </div>
     );
 };
