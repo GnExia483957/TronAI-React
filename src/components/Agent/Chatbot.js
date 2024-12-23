@@ -68,6 +68,7 @@ const Chatbot = () => {
         .then(data => {
             hideThinkingAnimation();
             typeOutMessage(data.data.answer, 'bot');
+            console.log(data);
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
